@@ -5,8 +5,6 @@ ChildWindowCore::ChildWindowCore()
 
 }
 
-
-
 void ChildWindowCore::newFile()
 {
 	//document order

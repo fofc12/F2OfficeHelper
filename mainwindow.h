@@ -1,15 +1,21 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
+
 #include <QMainWindow>
+#include<childwindowcore.h>
 
 namespace Ui {
 class MainWindow;
 }
 
+class ChildWindowCore;
+
 class QMdiArea;
 class QAction;
 class QMenu;
+
+
 
 class MainWindow : public QMainWindow
 {
@@ -25,6 +31,9 @@ private:
     QMdiArea *mdiArea;
 	QMenu *fileMenu;
 	QAction *newAct;
+private slots:
+    void fileNew();
+    ChildWindowCore *createChildWindow();
 };
 
 #endif // MAINWINDOW_H
